@@ -5,20 +5,22 @@
 <link rel="stylesheet" href="style.css">
 </head>  
 <body>  
-<form>  
+<form  onsubmit="saveToLocalStorage(event)">  
   <div class="container">  
   <center>  <h1> Registeration Form</h1> </center>  
   <hr>  
   <label><b>Name</b></label>   
 <input type="text" name="Name" placeholder= "Name" size="15" required />   
 <label><b>   
-Phone :  
+Phone:  
 </b></label>  
 <input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>   
 <input type="text" name="phone" placeholder="phone no." size="10"/ required>
  <label for="email"><b>Email</b></label>  
  <input type="text" placeholder="Enter Email" name="email" required>  
-    <button type="submit" class="registerbtn"><b>Register</b></button>    
+    <button type="submit" class="registerbtn"><b><center>Register</center></b></button>    
 </form>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.1.3/axios.min.js"></script>
+        <script src="main.js"></script>
 </body>  
 </html> 
